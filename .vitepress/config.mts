@@ -26,6 +26,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '开始',
+        collapsed: true,
         items: [{ text: '什么是 ROS', link: '/01-start/01-what-is-ros.md' }],
       },
     ],
