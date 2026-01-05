@@ -4,7 +4,8 @@
 
 ## Read
 
-https://kagenokeiyou.github.io/ros-notes/
+Github Pages: https://kagenokeiyou.github.io/ros-notes/  
+反向代理 (无需魔法): https://docs.kageno.top/ros-notes/
 
 ## Develop
 
