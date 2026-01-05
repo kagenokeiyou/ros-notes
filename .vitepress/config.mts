@@ -27,7 +27,16 @@ export default defineConfig({
       {
         text: '开始',
         collapsed: true,
-        items: [{ text: '什么是 ROS', link: '/01-start/01-what-is-ros.md' }],
+        items: [
+          { text: '什么是 ROS', link: '/01-start/01-what-is-ros.md' },
+          { text: '安装 ROS2', link: '/01-start/02-install-ros2.md' },
+          { text: '运行 turtlesim', link: '/01-start/03-run-turtlesim.md' },
+        ],
+      },
+      {
+        text: '节点',
+        collapsed: true,
+        items: [{ text: '编写节点', link: '/02-node/01-code-node.md' }],
       },
     ],
   },
