@@ -22,6 +22,9 @@ export default defineConfig({
         'Released under the <a href="https://github.com/kagenokeiyou/ros-notes/blob/main/LICENSE">MIT License</a>',
       copyright: 'Copyright © 2026-present <a href="https://github.com/kagenokeiyou">Keiyou</a>',
     },
+    outline: {
+      level: 'deep',
+    },
 
     sidebar: [
       {
@@ -36,7 +39,11 @@ export default defineConfig({
       {
         text: '节点',
         collapsed: true,
-        items: [{ text: '编写节点', link: '/02-node/01-code-node.md' }],
+        items: [
+          { text: '编写节点', link: '/02-node/01-code-node.md' },
+          { text: '使用功能包', link: '/02-node/02-use-package.md' },
+          { text: '使用工作空间', link: '/02-node/03-use-workplace.md' },
+        ],
       },
     ],
   },
