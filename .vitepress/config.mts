@@ -25,26 +25,78 @@ export default defineConfig({
     outline: {
       level: 'deep',
     },
-
-    sidebar: [
-      {
-        text: '开始',
-        collapsed: true,
-        items: [
-          { text: '什么是 ROS', link: '/01-start/01-what-is-ros.md' },
-          { text: '安装 ROS2', link: '/01-start/02-install-ros2.md' },
-          { text: '运行 turtlesim', link: '/01-start/03-run-turtlesim.md' },
-        ],
-      },
-      {
-        text: '节点',
-        collapsed: true,
-        items: [
-          { text: '编写节点', link: '/02-node/01-code-node.md' },
-          { text: '使用功能包', link: '/02-node/02-use-package.md' },
-          { text: '使用工作空间', link: '/02-node/03-use-workplace.md' },
-        ],
-      },
+    nav: [
+      { text: '开始', link: '/start/01-start/01-what-is-ros.md' },
+      { text: '概念', link: '/concepts/1-basic/01-node.md' },
     ],
+
+    sidebar: {
+      '/start/': [
+        {
+          text: '开始',
+          collapsed: true,
+          items: [
+            { text: '什么是 ROS', link: '/start/01-start/01-what-is-ros.md' },
+            { text: '安装 ROS2', link: '/start/01-start/02-install-ros2.md' },
+            { text: '运行 turtlesim', link: '/start/01-start/03-run-turtlesim.md' },
+          ],
+        },
+        {
+          text: '节点',
+          collapsed: true,
+          items: [
+            { text: '编写节点', link: '/start/02-node/01-code-node.md' },
+            { text: '使用功能包', link: '/start/02-node/02-use-package.md' },
+            { text: '使用工作空间', link: '/start/02-node/03-use-workplace.md' },
+          ],
+        },
+        {
+          text: '话题',
+          collapsed: true,
+          items: [
+            { text: '话题通信介绍', link: '/start/03-topic/01-introduction.md' },
+            { text: '发布小说', link: '/start/03-topic/02-pub-novel.md' },
+            { text: '订阅小说', link: '/start/03-topic/03-sub-novel.md' },
+          ],
+        },
+        {
+          text: '服务',
+          collapsed: true,
+          items: [
+            { text: '服务通信介绍', link: '/start/04-service/01-introduction.md' },
+            { text: '参数通信', link: '/start/04-service/02-parameter.md' },
+            { text: 'launch', link: '/start/04-service/04-launch.md' },
+          ],
+        },
+        {
+          text: '工具',
+          collapsed: true,
+          items: [{ text: 'tf', link: '/start/05-tools/01-tf.md' }],
+        },
+      ],
+      '/concepts/': [
+        {
+          text: '基本概念',
+          collapsed: false,
+          items: [
+            { text: '节点（Node）', link: '/concepts/1-basic/01-node.md' },
+            { text: '发现（Discovery）', link: '/concepts/1-basic/02-discovery.md' },
+            { text: '接口（Interface）', link: '/concepts/1-basic/03-interface.md' },
+            { text: '消息（Message）', link: '/concepts/1-basic/04-message.md' },
+            { text: '主题（Topic）', link: '/concepts/1-basic/05-topic.md' },
+            { text: '服务（Service）', link: '/concepts/1-basic/06-service.md' },
+            { text: '动作（Action）', link: '/concepts/1-basic/07-action.md' },
+          ],
+        },
+        {
+          text: '进阶概念',
+          collapsed: false,
+        },
+        {
+          text: '高级概念',
+          collapsed: false,
+        },
+      ],
+    },
   },
 })

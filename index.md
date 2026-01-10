@@ -11,5 +11,8 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /01-start/01-what-is-ros.md
+      link: /start/01-start/01-what-is-ros.md
+    - theme: alt
+      text: 概念
+      link: /concepts/1-basic/01-node.md
 ---

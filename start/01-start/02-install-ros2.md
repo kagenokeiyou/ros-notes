@@ -94,3 +94,7 @@ sudo apt install ros-jazzy-ros-base
 ```bash
 source /opt/ros/jazzy/setup.bash
 ```
+
+## 环境变量
+
+### ROS_DOMAIN_ID {#ros-domain-id}
