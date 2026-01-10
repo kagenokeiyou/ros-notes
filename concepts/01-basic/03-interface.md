@@ -4,7 +4,7 @@ ROS 应用程序通常通过三种类型的接口进行通信：主题（Topic�
 
 参见：
 
-- [消息（Message）](/concepts/1-basic/04-message.md)
-- [主题（Topic）](/concepts/1-basic/05-topic.md)
-- [服务（Service）](/concepts/1-basic/06-service.md)
-- [动作（Action）](/concepts/1-basic/07-action.md)
+- [消息（Message）](/concepts/01-basic/04-message.md)
+- [主题（Topic）](/concepts/01-basic/05-topic.md)
+- [服务（Service）](/concepts/01-basic/06-service.md)
+- [动作（Action）](/concepts/01-basic/07-action.md)

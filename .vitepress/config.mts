@@ -27,7 +27,7 @@ export default defineConfig({
     },
     nav: [
       { text: '开始', link: '/start/01-start/01-what-is-ros.md' },
-      { text: '概念', link: '/concepts/1-basic/01-node.md' },
+      { text: '概念', link: '/concepts/01-basic/01-node.md' },
     ],
 
     sidebar: {
@@ -79,13 +79,20 @@ export default defineConfig({
           text: '基本概念',
           collapsed: false,
           items: [
-            { text: '节点（Node）', link: '/concepts/1-basic/01-node.md' },
-            { text: '发现（Discovery）', link: '/concepts/1-basic/02-discovery.md' },
-            { text: '接口（Interface）', link: '/concepts/1-basic/03-interface.md' },
-            { text: '消息（Message）', link: '/concepts/1-basic/04-message.md' },
-            { text: '主题（Topic）', link: '/concepts/1-basic/05-topic.md' },
-            { text: '服务（Service）', link: '/concepts/1-basic/06-service.md' },
-            { text: '动作（Action）', link: '/concepts/1-basic/07-action.md' },
+            { text: '节点（Node）', link: '/concepts/01-basic/01-node.md' },
+            { text: '发现（Discovery）', link: '/concepts/01-basic/02-discovery.md' },
+            { text: '接口（Interface）', link: '/concepts/01-basic/03-interface.md' },
+            { text: '消息（Message）', link: '/concepts/01-basic/04-message.md' },
+            { text: '主题（Topic）', link: '/concepts/01-basic/05-topic.md' },
+            { text: '服务（Service）', link: '/concepts/01-basic/06-service.md' },
+            { text: '动作（Action）', link: '/concepts/01-basic/07-action.md' },
+            { text: '参数（Parameter）', link: '/concepts/01-basic/08-parameter.md' },
+            {
+              text: '使用命令行工具进行内省',
+              link: '/concepts/01-basic/09-command-introspection.md',
+            },
+            { text: '启动（launch）', link: '/concepts/01-basic/10-launch.md' },
+            { text: '客户端库', link: '/concepts/01-basic/11-client-libraries.md' },
           ],
         },
         {

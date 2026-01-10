@@ -14,5 +14,5 @@ hero:
       link: /start/01-start/01-what-is-ros.md
     - theme: alt
       text: 概念
-      link: /concepts/1-basic/01-node.md
+      link: /concepts/01-basic/01-node.md
 ---
