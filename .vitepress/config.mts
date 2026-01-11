@@ -38,7 +38,7 @@ export default defineConfig({
           items: [
             { text: '什么是 ROS', link: '/start/01-start/01-what-is-ros.md' },
             { text: '安装 ROS2', link: '/start/01-start/02-install-ros2.md' },
-            { text: '运行 turtlesim', link: '/start/01-start/03-run-turtlesim.md' },
+            { text: '配置环境', link: '/start/01-start/03-config-env.md' },
           ],
         },
         {
@@ -98,6 +98,7 @@ export default defineConfig({
         {
           text: '进阶概念',
           collapsed: false,
+          items: [{ text: 'ROS_DOMAIN_ID', link: '/concepts/02-intermediate/01-domain-id.md' }],
         },
         {
           text: '高级概念',

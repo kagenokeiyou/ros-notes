@@ -8,7 +8,7 @@
 
 我选用的是 Ubuntu 的 WSL2。
 
-## 设置 locale
+## 检查 locale
 
 确保有一个支持 UTF-8 的 locale，使用 `locale` 命令检查当前环境，使用 `locale -a` 命令查看所有支持的 locale。
 
@@ -29,13 +29,15 @@ export LANG=en_US.UTF-8
 
 ## 一键安装
 
-使用鱼香的一键安装脚本
+使用鱼香的一键安装脚本：
 
 ```bash
 wget http://fishros.com/install -O fishros && . fishros
 ```
 
 ## 手动安装
+
+如不使用一键安装，请按照以下步骤手动进行安装。
 
 ### 启用必要的仓库
 
@@ -61,7 +63,7 @@ sudo dpkg -i /tmp/ros2-apt-source.deb
 
 ### 安装开发工具（可选）
 
-如果你打算构建 ROS 软件包或进行其他开发，也可以安装开发工具
+如果你打算构建 ROS 软件包或进行其他开发，也可以安装开发工具。
 
 ```bash
 sudo apt update && sudo apt install ros-dev-tools
@@ -69,32 +71,23 @@ sudo apt update && sudo apt install ros-dev-tools
 
 ### 安装 ROS2
 
-更新 apt。
+更新 apt 并升级软件包。
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
-桌面安装（推荐）：包含 ROS、RViz、示例程序和教程。
+> [!TIP]
+> 以下以 jazzy 版本为例，可自行替换为其他版本。
+
+- 桌面安装（推荐）：包含 ROS、RViz、示例程序和教程。
 
 ```bash
 sudo apt install ros-jazzy-desktop
 ```
 
-ROS-Base 安装（精简版）：通信库、消息包、命令行工具。不包含 GUI 工具。
+- ROS-Base 安装（精简版）：通信库、消息包、命令行工具。不包含 GUI 工具。
 
 ```bash
 sudo apt install ros-jazzy-ros-base
 ```
-
-### 设置环境
-
-在 `~/.bashrc` 中添加以下内容
-
-```bash
-source /opt/ros/jazzy/setup.bash
-```
-
-## 环境变量
-
-### ROS_DOMAIN_ID {#ros-domain-id}
