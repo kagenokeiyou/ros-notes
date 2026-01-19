@@ -125,7 +125,8 @@ export default defineConfig({
         {
           items: [
             { text: '开始', link: '/api/01-start.md' },
-            { text: '基础', link: '/api/02-basic.md' },
+            { text: '上下文（Context）', link: '/api/02-context.md' },
+            { text: '节点（Node）', link: '/api/03-node.md' },
           ],
         },
       ],
