@@ -89,6 +89,14 @@ export default defineConfig({
             { text: 'Gazebo', link: '/start/06-sim/03-gazebo.md' },
           ],
         },
+        {
+          text: '导航',
+          collapsed: true,
+          items: [
+            { text: '地图', link: '/start/07-nav/01-map.md' },
+            { text: 'nav2', link: '/start/07-nav/02-nav2.md' },
+          ],
+        },
       ],
       '/concepts/': [
         {

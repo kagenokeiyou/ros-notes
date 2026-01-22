@@ -2,6 +2,8 @@
 
 URDF（Unified Robot Description Format，统一机器人描述格式）是 ROS 中用来描述机器人结构、外形和物理属性的一种 XML 格式文件。
 
+[[toc]]
+
 ## 文件结构
 
 ### XML 头部
@@ -215,3 +217,16 @@ URDF（Unified Robot Description Format，统一机器人描述格式）是 ROS 
 - `soft_upper_limit`（可选，默认为 0）一个指定关节安全控制器开始限制关节位置的上限边界属性。此限制需要小于关节上限。
 - `k_position`（可选，默认为 0）一个指定位置和速度限制之间关系的属性。
 - `k_velocity`（必需）一个指定力和速度限制之间关系的属性。
+
+## 在 RViz 中显示
+
+```sh
+sudo apt install ros-$ROS_DISTRO-joint-state-publisher
+sudo apt install ros-$ROS_DISTRO-robot-state-publisher
+```
+
+编写 launch 脚本（记得修改 `setup.py` / `CMakeLists.txt`）
+
+```python
+
+```
