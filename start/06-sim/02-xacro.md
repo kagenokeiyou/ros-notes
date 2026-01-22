@@ -59,6 +59,10 @@ Xacro 是 URDF 的“宏语言增强版”，本质上仍然生成 URDF。
 
 转 URDF
 
+```sh
+sudo apt install ros-$ROS_DISTRO-xacro
+```
+
 ```bash
 ros2 run xacro xacro simple_arm.xacro > simple_arm.urdf
 ```
